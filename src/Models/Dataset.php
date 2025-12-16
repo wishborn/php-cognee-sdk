@@ -13,7 +13,7 @@ readonly class Dataset
      * @param string $id Dataset ID
      * @param string $name Dataset name
      * @param array<string, mixed>|null $metadata Dataset metadata
-     * @param string $createdAt Creation timestamp
+     * @param string|null $createdAt Creation timestamp
      * @param string|null $updatedAt Last update timestamp
      * @param string|null $ownerId Owner user ID
      */
