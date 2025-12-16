@@ -1,0 +1,44 @@
+{
+    "name": "mikewolfxyou/php-cognee-sdk",
+    "description": "Unofficial PHP SDK for Cognee - AI Memory Platform",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["cognee", "ai", "memory", "knowledge-graph", "sdk", "llm", "rag"],
+    "homepage": "https://github.com/mikewolfxyou/php-cognee-sdk",
+    "readme": "README.md",
+    "support": {
+        "issues": "https://github.com/mikewolfxyou/php-cognee-sdk/issues",
+        "source": "https://github.com/mikewolfxyou/php-cognee-sdk"
+    },
+    "require": {
+        "php": "^8.4",
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0",
+        "friendsofphp/php-cs-fixer": "^3.64",
+        "mockery/mockery": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cognee\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cognee\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test-coverage": "phpunit --coverage-html coverage",
+        "cs-fix": "php-cs-fixer fix",
+        "cs-check": "php-cs-fixer fix --dry-run --diff"
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
